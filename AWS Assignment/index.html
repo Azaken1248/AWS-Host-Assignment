@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS EC2 Hosting Guide</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1c1c2b;
+            color: #d0d0e1;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #27293d;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            color: #66ccff;
+            font-size: 2em;
+            margin: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #2c2f3f;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .step {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #33354a;
+            border-left: 5px solid #66ccff;
+            border-radius: 5px;
+        }
+        .step h2 {
+            color: #66ccff;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .step p {
+            font-size: 1.1em;
+            line-height: 1.5em;
+            margin: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #27293d;
+            color: #808093;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AWS EC2 Hosting Guide</h1>
+        <p>Rohit Sinha 22BCE5007</p>
+    </header>
+    <div class="container">
+        <div class="step">
+            <h2>Step 1: Launch an EC2 Instance</h2>
+            <p>Log in to your AWS account and navigate to the EC2 Dashboard. Click on "Launch Instance" and select an Amazon Machine Image (AMI).</p>
+        </div>
+        <div class="step">
+            <h2>Step 2: Configure Instance Details</h2>
+            <p>Select the instance type that meets your needs. Configure network settings and add storage if necessary.</p>
+        </div>
+        <div class="step">
+            <h2>Step 3: Configure Security Group</h2>
+            <p>Create a new security group and allow HTTP, HTTPS, and SSH access by adding the necessary inbound rules.</p>
+        </div>
+        <div class="step">
+            <h2>Step 4: Review and Launch</h2>
+            <p>Review your configuration settings and click "Launch". Choose an existing key pair or create a new one to securely connect to your instance.</p>
+        </div>
+        <div class="step">
+            <h2>Step 5: Connect to Your Instance</h2>
+            <p>Once the instance is running, connect to it using SSH with the key pair you selected during the launch process.</p>
+        </div>
+        <div class="step">
+            <h2>Step 6: Deploy Your Website</h2>
+            <p>Transfer your website files to the EC2 instance using SCP or SFTP. Configure a web server (like Apache or Nginx) to serve your website.</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 AWS Guide. All rights reserved.
+    </footer>
+    <script>
+        // You can add any interactivity or animations here if needed
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log("AWS EC2 Hosting Guide loaded");
+        });
+    </script>
+</body>
+</html>
